@@ -1,0 +1,24 @@
+#
+# Configuration for the Simple REST API
+# Created by: Chester Javier <https://chesterjavier03.com>
+#
+
+application.version: 0.1
+
+spring:
+  output:
+    ansi:
+      enabled: DETECT
+  session:
+    store-type: hash-map
+  jpa:
+    hibernate:
+      dll-auto: none
+server:
+  port: 8080
+  error:
+    include-message: always
+
+chesterjavier:
+  multitenancy:
+    enabled: true
